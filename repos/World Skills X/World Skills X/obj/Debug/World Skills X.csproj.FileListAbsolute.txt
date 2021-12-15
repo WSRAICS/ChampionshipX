@@ -1,0 +1,15 @@
+C:\Users\wsr_arc02\source\repos\World Skills X\World Skills X\bin\Debug\World Skills X.exe.config
+C:\Users\wsr_arc02\source\repos\World Skills X\World Skills X\bin\Debug\World Skills X.exe
+C:\Users\wsr_arc02\source\repos\World Skills X\World Skills X\bin\Debug\World Skills X.pdb
+C:\Users\wsr_arc02\source\repos\World Skills X\World Skills X\obj\Debug\World Skills X.csprojAssemblyReference.cache
+C:\Users\wsr_arc02\source\repos\World Skills X\World Skills X\obj\Debug\MainWindow.g.cs
+C:\Users\wsr_arc02\source\repos\World Skills X\World Skills X\obj\Debug\App.g.cs
+C:\Users\wsr_arc02\source\repos\World Skills X\World Skills X\obj\Debug\World Skills X_MarkupCompile.cache
+C:\Users\wsr_arc02\source\repos\World Skills X\World Skills X\obj\Debug\World Skills X_MarkupCompile.lref
+C:\Users\wsr_arc02\source\repos\World Skills X\World Skills X\obj\Debug\MainWindow.baml
+C:\Users\wsr_arc02\source\repos\World Skills X\World Skills X\obj\Debug\World Skills X.g.resources
+C:\Users\wsr_arc02\source\repos\World Skills X\World Skills X\obj\Debug\World_Skills_X.Properties.Resources.resources
+C:\Users\wsr_arc02\source\repos\World Skills X\World Skills X\obj\Debug\World Skills X.csproj.GenerateResource.cache
+C:\Users\wsr_arc02\source\repos\World Skills X\World Skills X\obj\Debug\World Skills X.csproj.CoreCompileInputs.cache
+C:\Users\wsr_arc02\source\repos\World Skills X\World Skills X\obj\Debug\World Skills X.exe
+C:\Users\wsr_arc02\source\repos\World Skills X\World Skills X\obj\Debug\World Skills X.pdb
