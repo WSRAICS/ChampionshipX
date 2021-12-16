@@ -1,0 +1,2221 @@
+﻿<Window x:Class="World_Skills_X.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:World_Skills_X"
+        mc:Ignorable="d"
+        Title="World Skills X" Height="950" Width="1100" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Icon="resources/TLgreen.ico">
+    <Grid Background="#FF555555">
+        <Canvas Name="mCanv" Height="720" Margin="37,46,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="720" Background="#FF7E8C8F">
+            <!--<Rectangle Tag="road" Width="35" Height="35" Canvas.Left="45" Canvas.Top="10" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="80" Canvas.Top="10">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="45" Canvas.Top="45">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="80" Canvas.Top="45">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="45" Canvas.Top="80">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="80" Canvas.Top="80">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="10" Canvas.Top="80" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="45" Canvas.Top="115" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="80" Canvas.Top="115">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="80" Canvas.Top="255">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="45" Canvas.Top="255" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="10" Canvas.Top="325" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="115" Canvas.Top="290" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="115" Canvas.Top="80" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="115" Canvas.Top="45" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="150" Canvas.Top="80" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="150" Canvas.Top="45" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="185" Canvas.Top="80" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="185" Canvas.Top="45" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="220" Canvas.Top="80" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="220" Canvas.Top="45" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="255" Canvas.Top="80" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="255" Canvas.Top="45" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="290" Canvas.Top="80" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="290" Canvas.Top="45" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="325" Canvas.Top="80" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="325" Canvas.Top="45" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="360" Canvas.Top="80" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="360" Canvas.Top="45" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="115" Canvas.Top="185" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="115" Canvas.Top="150" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="255" Canvas.Top="185" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="220" Canvas.Top="290" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="290" Canvas.Top="325" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="290" Canvas.Top="290" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="360" Canvas.Top="325" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="395" Canvas.Top="10" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="430" Canvas.Top="115">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="395" Canvas.Top="185" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="430" Canvas.Top="185">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="395" Canvas.Top="115" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="150" Canvas.Top="360" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="185" Canvas.Top="360">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="150" Canvas.Top="395" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="185" Canvas.Top="395">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="150" Canvas.Top="430" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="185" Canvas.Top="430">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="150" Canvas.Top="465">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="185" Canvas.Top="465">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="150" Canvas.Top="500">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="185" Canvas.Top="500">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="115" Canvas.Top="500" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="115" Canvas.Top="465" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="45" Canvas.Top="465">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="80" Canvas.Top="465">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="45" Canvas.Top="500">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="80" Canvas.Top="500">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="10" Canvas.Top="500" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="10" Canvas.Top="465" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="45" Canvas.Top="535" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="80" Canvas.Top="535">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="45" Canvas.Top="570" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="80" Canvas.Top="570">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="45" Canvas.Top="605">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="80" Canvas.Top="605">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="45" Canvas.Top="640">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="80" Canvas.Top="640">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="10" Canvas.Top="640" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="10" Canvas.Top="605" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="150" Canvas.Top="535" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="185" Canvas.Top="535">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="150" Canvas.Top="570" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="185" Canvas.Top="570">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="150" Canvas.Top="605" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="185" Canvas.Top="605">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="150" Canvas.Top="640" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="185" Canvas.Top="640">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="150" Canvas.Top="675" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="185" Canvas.Top="675">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="220" Canvas.Top="500" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="220" Canvas.Top="465" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="255" Canvas.Top="500" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="255" Canvas.Top="465" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="290" Canvas.Top="465">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="325" Canvas.Top="465">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="290" Canvas.Top="500">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="325" Canvas.Top="500">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="290" Canvas.Top="430" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="325" Canvas.Top="430">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="290" Canvas.Top="395">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="325" Canvas.Top="395">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="290" Canvas.Top="535" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="325" Canvas.Top="535">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="290" Canvas.Top="570" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="325" Canvas.Top="570">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="290" Canvas.Top="605">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="325" Canvas.Top="605">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="290" Canvas.Top="640">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="325" Canvas.Top="640">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="360" Canvas.Top="640" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="360" Canvas.Top="605" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="395" Canvas.Top="640" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="395" Canvas.Top="605" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="430" Canvas.Top="640" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="430" Canvas.Top="605" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="465" Canvas.Top="640" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="465" Canvas.Top="605" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="500" Canvas.Top="640" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="500" Canvas.Top="605" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="500" Canvas.Top="290" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="500" Canvas.Top="325" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="570" Canvas.Top="185">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="535" Canvas.Top="220" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="570" Canvas.Top="220">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="535" Canvas.Top="255" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="570" Canvas.Top="255">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="535" Canvas.Top="80" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="570" Canvas.Top="80">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="605" Canvas.Top="290" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="640" Canvas.Top="325" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="675" Canvas.Top="325" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="675" Canvas.Top="290" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="535" Canvas.Top="360" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="570" Canvas.Top="360">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="535" Canvas.Top="395" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="570" Canvas.Top="395">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="535" Canvas.Top="430">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="570" Canvas.Top="430">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="535" Canvas.Top="465">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="570" Canvas.Top="465">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="535" Canvas.Top="500" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="570" Canvas.Top="500">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="535" Canvas.Top="535" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="570" Canvas.Top="535">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="535" Canvas.Top="570" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="570" Canvas.Top="570">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="535" Canvas.Top="605">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="570" Canvas.Top="605">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="535" Canvas.Top="640">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="570" Canvas.Top="640">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="535" Canvas.Top="675" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="570" Canvas.Top="675">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="605" Canvas.Top="640" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="605" Canvas.Top="605" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="640" Canvas.Top="640" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="640" Canvas.Top="605" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="675" Canvas.Top="640" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="675" Canvas.Top="605" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="45" Canvas.Top="10">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="115" Canvas.Top="45">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="605" Canvas.Top="115" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="570" Canvas.Top="360">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="605" Canvas.Top="465" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="605" Canvas.Top="430" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="640" Canvas.Top="465" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="640" Canvas.Top="430" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="675" Canvas.Top="465" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="675" Canvas.Top="430" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="605" Canvas.Top="430">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="430" Canvas.Top="465" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="430" Canvas.Top="430" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="465" Canvas.Top="465" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="465" Canvas.Top="430" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="500" Canvas.Top="465" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="500" Canvas.Top="430" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="395" Canvas.Top="430">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="395" Canvas.Top="465">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="500" Canvas.Top="465">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="430" Canvas.Top="430">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="325" Canvas.Top="430">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="290" Canvas.Top="430">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="220" Canvas.Top="465">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="290" Canvas.Top="570">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="185" Canvas.Top="535">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="10" Canvas.Top="640">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="80" Canvas.Top="535">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="150" Canvas.Top="430">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="185" Canvas.Top="360">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="360" Canvas.Top="605">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="500" Canvas.Top="640">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="535" Canvas.Top="570">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="570" Canvas.Top="500">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="605" Canvas.Top="605">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="570" Canvas.Top="675">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="priBlock" Width="35" Height="35" Canvas.Left="115" Canvas.Top="80">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/VagonBlock.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="priBlock" Width="35" Height="35" Canvas.Left="500" Canvas.Top="430">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/VagonBlock.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="truBlock" Width="35" Height="35" Canvas.Left="360" Canvas.Top="640">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/HeavyBlock2.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="truBlock" Width="35" Height="35" Canvas.Left="500" Canvas.Top="605">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/HeavyBlock2.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="carBlock" Width="35" Height="35" Canvas.Left="150" Canvas.Top="535">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/block.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="carBlock" Width="35" Height="35" Canvas.Left="605" Canvas.Top="465">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Block.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="vZebra" Width="35" Height="35" Canvas.Left="220" Canvas.Top="45">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Zvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="vZebra" Width="35" Height="35" Canvas.Left="220" Canvas.Top="80">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Zvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="vZebra" Width="35" Height="35" Canvas.Left="430" Canvas.Top="605">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Zvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="vZebra" Width="35" Height="35" Canvas.Left="430" Canvas.Top="640">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Zvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="hZebra" Width="35" Height="35" Canvas.Left="150" Canvas.Top="605">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Zhorizontal.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="hZebra" Width="35" Height="35" Canvas.Left="185" Canvas.Top="605">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Zhorizontal.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="whoMan" Width="35" Height="35" Canvas.Left="220" Canvas.Top="10">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Pedestrain.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="whoMan" Width="35" Height="35" Canvas.Left="220" Canvas.Top="605">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Pedestrain.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="whoMan" Width="35" Height="35" Canvas.Left="430" Canvas.Top="570">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Pedestrain.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="Road" Width="35" Height="35" Canvas.Left="10" Canvas.Top="45" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="395" Canvas.Top="45">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="430" Canvas.Top="45">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="395" Canvas.Top="80">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="430" Canvas.Top="80">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="535" Canvas.Top="115">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="570" Canvas.Top="115">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="535" Canvas.Top="150">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="570" Canvas.Top="150">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="535" Canvas.Top="290">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="570" Canvas.Top="290">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="535" Canvas.Top="325">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="570" Canvas.Top="325">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="45" Canvas.Top="150">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="80" Canvas.Top="150">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="45" Canvas.Top="185">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="80" Canvas.Top="185">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="45" Canvas.Top="290">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="80" Canvas.Top="290">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="45" Canvas.Top="325">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="80" Canvas.Top="325">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="150" Canvas.Top="290">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="185" Canvas.Top="290">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="150" Canvas.Top="325">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="185" Canvas.Top="325">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="220" Canvas.Top="325" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="255" Canvas.Top="290" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="255" Canvas.Top="325" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="395" Canvas.Top="290">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="430" Canvas.Top="290">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="395" Canvas.Top="325">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="430" Canvas.Top="325">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="325" Canvas.Top="325" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="360" Canvas.Top="290" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="325" Canvas.Top="290" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="430" Canvas.Top="115">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="395" Canvas.Top="115" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="430" Canvas.Top="150">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="395" Canvas.Top="150" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="430" Canvas.Top="220">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="395" Canvas.Top="220" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="430" Canvas.Top="255">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="395" Canvas.Top="255" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="640" Canvas.Top="150" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="640" Canvas.Top="115" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="675" Canvas.Top="150" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="675" Canvas.Top="115" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="605" Canvas.Top="150" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="535" Canvas.Top="185" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="465" Canvas.Top="290" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="465" Canvas.Top="325" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="115" Canvas.Top="325" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="10" Canvas.Top="290" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="80" Canvas.Top="220">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="45" Canvas.Top="220" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="150" Canvas.Top="185" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="150" Canvas.Top="150" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="185" Canvas.Top="185" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="185" Canvas.Top="150" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="220" Canvas.Top="185" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="220" Canvas.Top="150" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="255" Canvas.Top="150" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="36" Height="35" Canvas.Left="256" Canvas.Top="185">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="115" Canvas.Top="150">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="45" Canvas.Top="115">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="80" Canvas.Top="115">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="10" Canvas.Top="80">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="truBlock" Width="36" Height="36" Canvas.Left="115" Canvas.Top="185">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/HeavyBlock2.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="priBlock" Width="35" Height="35" Canvas.Left="360" Canvas.Top="45">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/VagonBlock.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="535" Canvas.Top="45" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="570" Canvas.Top="45">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="535" Canvas.Top="10" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="570" Canvas.Top="10">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="430" Canvas.Top="10">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="290" Canvas.Top="150">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="crossRoad" Width="35" Height="35" Canvas.Left="290" Canvas.Top="185">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rcrossroads.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="115" Canvas.Top="500">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="10" Canvas.Top="325">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="45" Canvas.Top="255">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="80" Canvas.Top="220">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="115" Canvas.Top="290">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="220" Canvas.Top="290">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="vZebra" Width="35" Height="35" Canvas.Left="290" Canvas.Top="290">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Zvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="vZebra" Width="35" Height="35" Canvas.Left="290" Canvas.Top="325">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Zvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="whoMan" Width="35" Height="35" Canvas.Left="290" Canvas.Top="255">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Pedestrain.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="640" Canvas.Top="290" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="road" Width="35" Height="35" Canvas.Left="605" Canvas.Top="325" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Rvertical.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="hZebra" Width="35" Height="35" Canvas.Left="395" Canvas.Top="185">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Zhorizontal.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="hZebra" Width="35" Height="35" Canvas.Left="430" Canvas.Top="185">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Zhorizontal.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="hZebra" Width="35" Height="35" Canvas.Left="535" Canvas.Top="220">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Zhorizontal.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="hZebra" Width="35" Height="35" Canvas.Left="570" Canvas.Top="220">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Zhorizontal.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="whoMan" Width="35" Height="35" Canvas.Left="605" Canvas.Top="220">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Pedestrain.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="36" Height="35" Canvas.Left="604" Canvas.Top="115">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="36" Height="35" Canvas.Left="535" Canvas.Top="80">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="36" Height="35" Canvas.Left="395" Canvas.Top="10">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="36" Height="35" Canvas.Left="429" Canvas.Top="115">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="36" Height="35" Canvas.Left="394" Canvas.Top="255">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="36" Height="35" Canvas.Left="465" Canvas.Top="290">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="36" Height="35" Canvas.Left="499" Canvas.Top="325">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="carBlock" Width="35" Height="35" Canvas.Left="569" Canvas.Top="80">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/Block.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="35" Height="35" Canvas.Left="604" Canvas.Top="290">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="36" Height="35" Canvas.Left="359" Canvas.Top="80">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Tag="tLightG" Width="36" Height="35" Canvas.Left="570" Canvas.Top="185">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="resources/TLgreen.png"/>
+                </Rectangle.Fill>
+            </Rectangle>-->
+        </Canvas>
+        <Label Name="coord" Content="nullL0L0Null" Foreground="White" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,0,0"/>
+        <Button Name="addObj" Content="Добавить объект" Background="Gray" Foreground="White" FontSize="16" FontWeight="Bold" Height="50" Margin="37,797,0,0" VerticalAlignment="Top" Click="AddObj_Click" HorizontalAlignment="Left" Width="139"/>
+        <Border Name="addBrd" Background="Gray" BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Height="70" Margin="27,786,0,0" Visibility="Hidden"/>
+        <Border Name="settingsBrd" Background="Gray" BorderBrush="Black" BorderThickness="2" VerticalAlignment="Top" Height="170" Margin="780,309,0,0" Visibility="Visible" HorizontalAlignment="Left" Width="294"/>
+        <Label Name="settingsLb" Foreground="White" Content="Свойства объекта: " FontSize="14" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="792,317,0,0"/>
+        <Button Name="zbrSet" Foreground="White" Content="Повернуть на 90" Background="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" FontSize="20" FontWeight="Bold" Margin="848,376,0,0" Click="Rotator" Visibility="Hidden"/>
+        <CheckBox Name="setBlockC" Foreground="White" FontSize="16" Content="Для легковых" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="792,360,0,0"/>
+        <CheckBox Name="setBlockH" Foreground="White" FontSize="16" Content="Для грузовых" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="792,383,0,0"/>
+        <CheckBox Name="setBlockV" Foreground="White" FontSize="16" Content="Для авто с прицепом" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="792,406,0,0"/>
+        <Button Name="addTl" Height="50" Width="50" HorizontalAlignment="Left" Margin="37,797,0,0" VerticalAlignment="Top" Click="AddTl_Click" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush ImageSource="resources/TLgreen.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="addZbr" Height="50" Width="50" HorizontalAlignment="Left" Margin="97,797,0,0" VerticalAlignment="Top" Click="AddZbr_Click" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush ImageSource="resources/Zhorizontal.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="addPsr" Height="50" Width="50" HorizontalAlignment="Left" Margin="157,797,0,0" VerticalAlignment="Top" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush ImageSource="resources/Pedestrain.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="addRdb" Height="50" Width="50" HorizontalAlignment="Left" Margin="217,797,0,0" VerticalAlignment="Top" Click="AddRdb_Click" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush ImageSource="resources/Block.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="cX" Content="X" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="264,777,0,0" VerticalAlignment="Top" Width="20" Background="Gray" Click="CX_Click" Visibility="Hidden"/>
+        <Button Name="rmObj" Content="Удалить объект" Background="Gray" Foreground="White" FontSize="16" FontWeight="Bold" Height="50" Margin="187,797,0,0" VerticalAlignment="Top" Click="RmObj_Click" HorizontalAlignment="Left" Width="139"/>
+        <Button Name="tlMode" Content="Режим светофоров" Background="Gray" Foreground="White" FontSize="16" FontWeight="Bold" Height="50" Margin="561,797,0,0" VerticalAlignment="Top" Click="TlMode_Click" HorizontalAlignment="Left"/>
+        <Label Name="lbTlMode" Content="По времени" Foreground="White" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="280,5,0,0"/>
+        <Button Name="tlModeT" Content="По времени" Background="Gray" Foreground="White" FontSize="16" FontWeight="Bold" Height="50" Margin="479,797,0,0" VerticalAlignment="Top" Click="TlModeT_Click" HorizontalAlignment="Left" Visibility="Hidden"/>
+        <Button Name="tlModeC" Content="По транспорту" Background="Gray" Foreground="White" FontSize="16" FontWeight="Bold" Height="50" Margin="644,797,0,0" VerticalAlignment="Top" Click="TlModeC_Click" HorizontalAlignment="Left" Visibility="Hidden"/>
+        <Button Name="tlModeStd" Content="Стандартный режим" Background="Gray" Foreground="White" FontSize="16" FontWeight="Bold" Height="50" Margin="561,857,0,0" VerticalAlignment="Top" Click="TlModeT_Click" HorizontalAlignment="Left" Visibility="Hidden"/>
+        <Button Name="testModeStd" Content="Тест-шаблон" Background="Gray" Foreground="White" FontSize="16" FontWeight="Bold" Height="50" Margin="970,681,0,0" VerticalAlignment="Top" Click="TlModeT_Click" HorizontalAlignment="Left"/>
+        <Button Name="testModeRnd" Content="Тест-рандом" Background="Gray" Foreground="White" FontSize="16" FontWeight="Bold" Height="50" Margin="970,747,0,0" VerticalAlignment="Top" Click="TlModeT_Click" HorizontalAlignment="Left"/>
+    </Grid>
+</Window>
