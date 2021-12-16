@@ -49,5 +49,10 @@ namespace World_Skills_X
         {
 
         }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

@@ -53,7 +53,7 @@ namespace World_Skills_X
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel1.Location = new System.Drawing.Point(8, 9);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(767, 656);
@@ -127,7 +127,7 @@ namespace World_Skills_X
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(798, 48);
+            this.button1.Location = new System.Drawing.Point(827, 48);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 8;
@@ -136,16 +136,17 @@ namespace World_Skills_X
             // 
             // btn
             // 
-            this.btn.Location = new System.Drawing.Point(988, 48);
+            this.btn.Location = new System.Drawing.Point(979, 48);
             this.btn.Name = "btn";
             this.btn.Size = new System.Drawing.Size(75, 23);
             this.btn.TabIndex = 9;
-            this.btn.Text = "button2";
+            this.btn.Text = "Таблицы";
             this.btn.UseVisualStyleBackColor = true;
+            this.btn.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnSeve
             // 
-            this.btnSeve.Location = new System.Drawing.Point(890, 48);
+            this.btnSeve.Location = new System.Drawing.Point(903, 48);
             this.btnSeve.Name = "btnSeve";
             this.btnSeve.Size = new System.Drawing.Size(75, 23);
             this.btnSeve.TabIndex = 10;
