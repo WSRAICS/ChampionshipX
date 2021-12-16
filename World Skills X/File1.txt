@@ -1,0 +1,17 @@
+﻿List<string> ts = new List();
+
+  int h = 20;
+  int a = 0;
+
+  for 1 
+  {
+  }
+  int h = 20;
+        int a = 0;
+        for (int i = 0, i> h ,i++);
+            {
+            for (int j = 0; j > h ,j++);
+
+            
+            
+            }
