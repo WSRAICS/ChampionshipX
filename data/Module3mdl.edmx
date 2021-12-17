@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Хранилище townEventsModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Cars_stats">
+          <Key>
+            <PropertyRef Name="Id_car" />
+          </Key>
+          <Property Name="Id_car" Type="int" Nullable="false" />
+          <Property Name="Car_spawn_ticks" Type="int" />
+          <Property Name="Car_exit_ticks" Type="int" />
+        </EntityType>
+        <EntityType Name="Traffic_light">
+          <Key>
+            <PropertyRef Name="Id_light" />
+          </Key>
+          <Property Name="Id_light" Type="int" Nullable="false" />
+          <Property Name="Car_count_full_run" Type="int" />
+          <Property Name="Car_average_in_minute" Type="int" />
+          <Property Name="Count_color_switches" Type="int" />
+        </EntityType>
+        <EntityContainer Name="Хранилище townEventsModelContainer">
+          <EntitySet Name="Cars_stats" EntityType="Self.Cars_stats" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Traffic_light" EntityType="Self.Traffic_light" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="townEventsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="townEventsEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Cars_stats" EntityType="townEventsModel.Cars_stats" />
+          <EntitySet Name="Traffic_light" EntityType="townEventsModel.Traffic_light" />
+        </EntityContainer>
+        <EntityType Name="Cars_stats">
+          <Key>
+            <PropertyRef Name="Id_car" />
+          </Key>
+          <Property Name="Id_car" Type="Int32" Nullable="false" />
+          <Property Name="Car_spawn_ticks" Type="Int32" />
+          <Property Name="Car_exit_ticks" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Traffic_light">
+          <Key>
+            <PropertyRef Name="Id_light" />
+          </Key>
+          <Property Name="Id_light" Type="Int32" Nullable="false" />
+          <Property Name="Car_count_full_run" Type="Int32" />
+          <Property Name="Car_average_in_minute" Type="Int32" />
+          <Property Name="Count_color_switches" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище townEventsModelContainer" CdmEntityContainer="townEventsEntities">
+          <EntitySetMapping Name="Cars_stats">
+            <EntityTypeMapping TypeName="townEventsModel.Cars_stats">
+              <MappingFragment StoreEntitySet="Cars_stats">
+                <ScalarProperty Name="Car_exit_ticks" ColumnName="Car_exit_ticks" />
+                <ScalarProperty Name="Car_spawn_ticks" ColumnName="Car_spawn_ticks" />
+                <ScalarProperty Name="Id_car" ColumnName="Id_car" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Traffic_light">
+            <EntityTypeMapping TypeName="townEventsModel.Traffic_light">
+              <MappingFragment StoreEntitySet="Traffic_light">
+                <ScalarProperty Name="Count_color_switches" ColumnName="Count_color_switches" />
+                <ScalarProperty Name="Car_average_in_minute" ColumnName="Car_average_in_minute" />
+                <ScalarProperty Name="Car_count_full_run" ColumnName="Car_count_full_run" />
+                <ScalarProperty Name="Id_light" ColumnName="Id_light" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
